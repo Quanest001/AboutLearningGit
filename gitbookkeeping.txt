@@ -1,0 +1,58 @@
+创建一个空的目录 
+mmkdir learngit
+cd learngit
+pwd //显示当前目录用的
+
+git init //初始化git仓库
+
+git status //查看仓库的当前状态
+
+git diff xxx.txt //查看某个文件的变化
+
+****添加到仓库里的两个步骤
+
+git add xxx.txt
+git commit -m xxxxx  //xxx是版本描述
+
+文本每次有修改的时候都需要Add,Add之后没有commit又有了修改，需要重新add才能把最新的文本放到仓库中
+
+可以git status 查看状态
+
+***************************
+git log 查当前log版本
+
+git reflog 下次登陆的时候查看之前的版本
+
+cat xxxx.txt  ///查看某个文本的内容 
+
+*******************************还原
+
+git checkout -- xxx.txt //丢弃工作区对某文件的修改
+
+git reset --hard xxxx ///回退到某个版本
+
+git reset --harf HEAD  //回退到仓库的最新版本
+
+git reset HEAD ///吧暂存区的修改回退
+
+
+场景1：当你改乱了工作区某个文件的内容，想直接丢弃工作区的修改时，用命令git checkout -- file。
+
+场景2：当你不但改乱了工作区某个文件的内容，还添加到了暂存区时，想丢弃修改，分两步，第一步用命令git reset HEAD file，就回到了场景1，第二步按场景1操作。
+
+***********************************
+rm xxx.txt//删除某个文件
+
+git rm xxx.txt//在git 里删除某个文本
+
+两个 rm有区别
+
+
+第一个删掉了之后 通过  git checkout -- xxx.txt能还原回来
+
+
+第二个是直接从git里面删除  只能通过版本回退  git reset --hard 版本号 来还原
+
+
+
+
