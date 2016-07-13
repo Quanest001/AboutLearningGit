@@ -1,3 +1,5 @@
+cd c:/  //切换目录
+
 创建一个空的目录 
 mmkdir learngit
 cd learngit
@@ -52,6 +54,22 @@ git rm xxx.txt//在git 里删除某个文本
 
 
 第二个是直接从git里面删除  只能通过版本回退  git reset --hard 版本号 来还原
+
+
+**********************创建分支和合并分支
+
+git checkout -b 分支名字 ///创建并切换到分支
+
+可以分解为两个步骤  
+
+git  branch 分支名称  //创建分支 
+
+git checkout 分支名称 //切换到分支
+
+git branch  ///查看所有分支
+
+切换到分支之后一切修改只在分支上生效..............
+
 
 
 
